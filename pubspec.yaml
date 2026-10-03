@@ -1,0 +1,47 @@
+name: smart_campus
+description: Smart Campus - offline college management app (Flutter, SQLite).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  path_provider: ^2.1.4
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
+  crypto: ^3.0.5
+  intl: '>=0.19.0 <1.0.0'
+  image_picker: ^1.1.2
+  file_picker: ^8.1.2
+  pdf: ^3.11.1
+  printing: ^5.13.2
+  share_plus: ^10.1.2
+  open_filex: ^4.5.0
+  flutter_local_notifications: ^22.3.1
+  timezone: ^0.11.1
+  flutter_timezone: ^5.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/logo.png
+  remove_alpha_ios: true
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: assets/logo_foreground.png
