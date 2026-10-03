@@ -11,30 +11,6 @@ first launch.
 
 **Download:** get the latest Android APK from the [Releases page](../../releases/latest).
 
-## Screenshots
-
-Put your screenshots in `docs/screenshots/` using the file names below and they will show up here.
-
-### Student
-
-| Login | Home | Timetable |
-| :---: | :---: | :---: |
-| <img src="docs/screenshots/login.png" width="220"> | <img src="docs/screenshots/student_home.png" width="220"> | <img src="docs/screenshots/student_timetable.png" width="220"> |
-
-| Attendance | Notices | Fees |
-| :---: | :---: | :---: |
-| <img src="docs/screenshots/student_attendance.png" width="220"> | <img src="docs/screenshots/student_notices.png" width="220"> | <img src="docs/screenshots/student_fees.png" width="220"> |
-
-### Admin
-
-| Dashboard | Students | Timetable |
-| :---: | :---: | :---: |
-| <img src="docs/screenshots/admin_dashboard.png" width="220"> | <img src="docs/screenshots/admin_students.png" width="220"> | <img src="docs/screenshots/admin_timetable.png" width="220"> |
-
-| Attendance | Fees | Reports |
-| :---: | :---: | :---: |
-| <img src="docs/screenshots/admin_attendance.png" width="220"> | <img src="docs/screenshots/admin_fees.png" width="220"> | <img src="docs/screenshots/admin_reports.png" width="220"> |
-
 ## Run it
 
 1. Install Flutter (3.24 or newer) and connect an Android phone or start an emulator.
