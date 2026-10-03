@@ -1,16 +1,46 @@
-# Smart Campus
+<p align="center">
+  <img src="assets/logo.png" alt="Smart Campus logo" width="140">
+</p>
+
+<h1 align="center">Smart Campus</h1>
+<p align="center"><em>One Campus, One Smart Solution</em></p>
 
 An offline college management app built with Flutter (Material 3). All data lives in a local
 SQLite database on the device and is pre-filled with sample data, so every screen has content on
 first launch.
 
+**Download:** get the latest Android APK from the [Releases page](../../releases/latest).
+
+## Screenshots
+
+Put your screenshots in `docs/screenshots/` using the file names below and they will show up here.
+
+### Student
+
+| Login | Home | Timetable |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/login.png" width="220"> | <img src="docs/screenshots/student_home.png" width="220"> | <img src="docs/screenshots/student_timetable.png" width="220"> |
+
+| Attendance | Notices | Fees |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/student_attendance.png" width="220"> | <img src="docs/screenshots/student_notices.png" width="220"> | <img src="docs/screenshots/student_fees.png" width="220"> |
+
+### Admin
+
+| Dashboard | Students | Timetable |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/admin_dashboard.png" width="220"> | <img src="docs/screenshots/admin_students.png" width="220"> | <img src="docs/screenshots/admin_timetable.png" width="220"> |
+
+| Attendance | Fees | Reports |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/admin_attendance.png" width="220"> | <img src="docs/screenshots/admin_fees.png" width="220"> | <img src="docs/screenshots/admin_reports.png" width="220"> |
+
 ## Run it
 
-1. Install Flutter (3.24 or newer) and set up an Android emulator or an iOS simulator.
-2. In this folder create the platform projects (this keeps `lib/` and `pubspec.yaml` as they are):
+1. Install Flutter (3.24 or newer) and connect an Android phone or start an emulator.
+2. In this folder run:
 
    ```
-   flutter create --org com.smartcampus --project-name smart_campus --platforms android,ios .
    flutter pub get
    flutter run
    ```
@@ -64,6 +94,10 @@ Student: home dashboard, timetable with the current class highlighted, attendanc
 below 75 percent, courses and materials, notices with unread markers, events, fees with receipt PDFs,
 notification center, requests, profile (edit phone, address and photo).
 
+Device notifications: students get phone reminders for fee due dates (3 days before, 1 day before
+and on the day) and for events (the evening before and 1 hour before). They are rebuilt each time
+the student opens the app.
+
 ## Project structure
 
 ```
@@ -97,7 +131,6 @@ The schema version is in `lib/data/local/app_database.dart`. When you change a t
 
 ## Known limits
 
-* Device (push style) notifications are not included. The in-app notification center is complete.
-  `flutter_local_notifications` can be added once the app is running.
+* Device notifications are set up for Android only. iOS needs extra notification setup in Xcode.
 * The list of programs is fixed in `lib/core/constants.dart` (`kPrograms`).
 * Dark and light themes both work, but the app has not been checked on every screen size.
